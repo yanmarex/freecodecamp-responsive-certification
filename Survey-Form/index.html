@@ -8,18 +8,18 @@
 </head>
 <body>
     <main class="main">
-        <h1 id="title">Touhou Project Survey Form</h1>
+        <h1 id="title" class="title">Touhou Project Survey Form</h1>
         <p id="description">This is the survey to know fans opinions</p>
-        <section class="survey-box">
-            <form id="survey-form">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                <label for="email" id="email-label">Email</label>
-                <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" name="email" id="email" placeholder="Enter your email" required>
-                <label for="number" id="number-label">Age</label>
-                <input type="number" min="14" max="99" name="number" id="number" placeholder="Age" required>
+        <section>
+            <form class="survey-box"id="survey-form">
+                <label class="label-separation" for="name" id="name-label">Name</label>
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+                <label class="label-separation"for="email" id="email-label">Email</label>
+                <input class="form-input" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" name="email" id="email" placeholder="Enter your email" required>
+                <label class="label-separation"for="number" id="number-label">Age</label>
+                <input class="form-input" type="number" min="14" max="99" name="number" id="number" placeholder="Age" required>
                 <p>Which option best describes your current level?</p>
-                <select name="level" id="dropdown">
+                <select class="form-select" name="level" id="dropdown">
                     <option disabled selected value>Select current level</option>
                     <option value="starter">Starter</option>
                     <option value="normal">Normal</option>
@@ -32,18 +32,19 @@
                 <label><input type="radio" name="user-recommend" value="Maybe">Maybe</label>
                 <label><input type="radio" name="user-recommend" value="Not sure">Not sure</label>
                 <p>Which games are your favorites in Touho Project?</p>
-                <label><input type="checkbox" name="prefer" value="Ten-Desires">Ten Desires</label>
-                <label><input type="checkbox" name="prefer" value="Legacy-of-Lunatic-Kingdom">Legacy of Lunatic Kingdom</label>
-                <label><input type="checkbox" name="prefer" value="Hidden-Star-in-Four-Seasons">Hidden Star in Four Seasons</label>
-                <label><input type="checkbox" name="prefer" value="Imperishable-Night">Imperishable Night</label>
-                <label><input type="checkbox" name="prefer" value="Embodiment-of-Scarlet-Devil">Embodiment of Scarlet Devil</label>
-                <label><input type="checkbox" name="prefer" value="Mountain-of-Faith">Mountain of Faith</label>
-                <label><input type="checkbox" name="prefer" value="Lotus-Land-Story">Lotus Land Story</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Ten-Desires">Ten Desires</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Legacy-of-Lunatic-Kingdom">Legacy of Lunatic Kingdom</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Hidden-Star-in-Four-Seasons">Hidden Star in Four Seasons</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Imperishable-Night">Imperishable Night</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Embodiment-of-Scarlet-Devil">Embodiment of Scarlet Devil</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Mountain-of-Faith">Mountain of Faith</label>
+                <label><input class="input-checkbox" type="checkbox" name="prefer" value="Lotus-Land-Story">Lotus Land Story</label>
                 <p>Any comments or suggestions?</p>
                 <textarea name="comment" placeholder="Write Here!"></textarea>
-                <button id="submit" type="submit">Submit</button>
+                <button class="btn" id="submit" type="submit">Submit</button>
             </form>
         </section>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
