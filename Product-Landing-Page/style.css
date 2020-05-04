@@ -9,10 +9,44 @@ body {
 }
 img {
     max-width: 100%;
-    height: auto;
-    display: block;
 }
 a {
     color: bisque;
     text-decoration: none;
+}
+.header {
+    background: url(img/bc-1.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+}
+.logo-container {
+    width: 100%;
+    height: 50px;
+    background: url(img/bicicleta.svg) no-repeat;
+    background-size: contain;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+.nav-link {
+    margin: 3px 0;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 560px;
+    max-height: 315px;
 }

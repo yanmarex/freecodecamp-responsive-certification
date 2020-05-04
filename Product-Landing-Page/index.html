@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main class="main">
+        <header class="header" id="header">
+            <div id="header-img" class="logo-container">
+            </div>
+            <nav class="nav" id="nav-bar">
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Experience</a>
+            </nav>
+            <section class="features" id="features">
+                <h2>The best bicycles are here</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" name="email" id="email" placeholder="Enter your Email!" required>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+                <div class="iframe-container" id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jk7rliZpuSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="pricing"></section>
+            <section id="Experience"></section>
+        </header>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
