@@ -9,12 +9,15 @@
 <body>
     <main class="main">
         <header class="header" id="header">
-            <div id="header-img" class="logo-container">
-            </div>
             <nav class="nav" id="nav-bar">
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link" href="#">Experience</a>
+                <a href="#">
+                    <div class="logo-container">
+                        <img id="header-img" src="" alt="Logo">
+                    </div>
+                </a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link" href="#Experience">Experience</a>
             </nav>
             <section class="features" id="features">
                 <h2>The best bicycles are here</h2>
@@ -22,8 +25,8 @@
                     <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" name="email" id="email" placeholder="Enter your Email!" required>
                     <input type="submit" value="Submit" id="submit">
                 </form>
-                <div class="iframe-container" id="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jk7rliZpuSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="iframe-container">
+                    <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/Jk7rliZpuSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
             <section id="pricing"></section>

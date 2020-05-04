@@ -9,28 +9,38 @@ body {
 }
 img {
     max-width: 100%;
+    height: auto;
 }
 a {
     color: bisque;
     text-decoration: none;
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header {
-    background: url(img/bc-1.jpg) no-repeat;
+    background: blue;
     height: 100vh;
     background-size: cover;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .logo-container {
     width: 100%;
-    height: 50px;
-    background: url(img/bicicleta.svg) no-repeat;
-    background-size: contain;
+    height: 20px;
 }
 .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
+    top: 0;
 }
 .nav-link {
     margin: 3px 0;
@@ -49,4 +59,19 @@ a {
     height: 100%;
     max-width: 560px;
     max-height: 315px;
+}
+.features {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 500px) {
+.nav {
+    justify-content: end;
+    width: 100%;
+}
+.nav-link {
+    margin: 3px 10px;
+}
 }
